@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">   
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/use.css">
+ 
+
+
+   <style>
+
+   	.module {
+  background-image: url(bgsvg.svg);
+  
+  --x: 0px;
+  --y: 0px;
+  background-position: var(--x) var(--y);
+}
+   	.module12 {
+  background-image: url(bgotherwork-min.jpg);
+  
+  --x: 0px;
+  --y: 0px;
+  background-position: var(--x) var(--y);
+}
+   	.modulevr {
+  background-image: url(vrbg-min.png);
+  background-repeat: none;
+  --x: 0px;
+  --y: 0px;
+  background-position: var(--x) var(--y);
+}
+   	.modulesl {
+  background-image: url(bgsl-min.png);
+  background-repeat: none;
+  --x: 0px;
+  --y: 0px;
+  background-position: var(--x) var(--y);
+}
+
+li {
+
+	padding-left: 0;
+}
+
+   </style>
+</head>
+<body >
+<div>
+  <button onclick="topFunction()" id="mybtn" title="Go to top"><i class="fa fa-angle-double-up fa-2x"></i></button>
+</div>
+<!--        first page introduction and social profile linkers   -->
+<div>
+  <ul class="ulist">
+  
+    <li class="list"><div id="buttondown" class="overlay-detail text-center"><a  id="contactpointer" href="#contact"><p class="listtext fon">Contact</p></a></div></li>
+    <li class="list"><div id="buttondown1" class="overlay-detail text-center"><a href="#otherhead"><p class="listtext fon">Other Works</p></a></div></li>
+    <li class="list"><div id="buttondown2" class="overlay-detail text-center"><a href="#labs"><p class="listtext fon">Research Labs</p></a></div></li>
+  </ul>
+</div>
+<div id="intro" class="container-fluid module full-width">
+  <div class="row">
+    <div class="col-md-8 wow fadeIn delay-05s">
+      <div class="banner-text animated">
+        <p class="fon rblack strong1 ">Hi, I am Abhijit<br>
+        Web Developer <br>& Tech Enthusiast</p>
+      </div>
+    
+    <!-- section for mobile screen mode -->
+      <div class=" banner-text-icon-xs visible-xs-block">
+        <br><br><br><br><br>
+        <ul class="social-list">
+          <div class="icon-padding" >
+            <li>
+            <a  href="https://www.linkedin.com/">   <!-- Linkedin profile link -->
+            <div onmouseenter="sshakei()" onmouseleave="slshakei()" id="linkedis" class=" col-1 fa fa-linkedin-square animated infinite fa-1x visible-xs-block icon-padding">
+             </div></a>
+            </li>
+
+            <!-- google scholar profile link -->
+            <li> <a href="https://goo.gl/"><div onmouseenter="sshakes()" onmouseleave="slshakes()" id="scholars" class=" col-1 ai ai-google-scholar-square animated infinite ai-1x visible-xs-block icon-padding"></div></a></li>
+            <!-- orcid profile link -->
+            <li> <a href="https://orcid.org/"><div onmouseenter="sshakeo()" onmouseleave="slshakeo()" id="orcids" class=" col-1 ai ai-orcid-square infinite animated ai-1x visible-xs-block icon-padding"></div></a></li>
+            <!-- research Gate profile link -->
+            <li> <a href="https://www.researchgate.net/"><div onmouseenter="sshakeg()" onmouseleave="slshakeg()" id="gates" class="col-1 ai ai-researchgate animated infinite ai-1x visible-xs-block icon-padding"></div></a></li>
+            <!-- document or Resume section attach text file or pdf -->
+            <li><a href="xyz.pdf"><div onmouseenter="sshakep()" onmouseleave="slshakep()" id="pdfdown" class="col-1 fa fa-file-pdf-o infinite animated fa-1x visible-xs-block"></div></a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- section for full screen mode -->
+    <div class="col-md-3 banner-text-icon  hidden-xs">
+      <br><br><br>
+      <ul class="social-list c-align">
+        <li>
+        	<!-- Linkedin profile link -->
+          <a  href="https://www.linkedin.com/"><div onmouseenter="shakei()" onmouseleave="lshakei()" id="linkedi" class="fa fa-linkedin-square animated infinite fa-2x hidden-xs "></div></a>
+        </li><br><br>
+        
+        
+        <li>
+        	<!-- google scholar profile link -->
+          <a href="https://goo.gl/"><div onmouseenter="shakes()" onmouseleave="lshakes()" id="scholar" class="ai ai-google-scholar-square animated infinite ai-2x hidden-xs"></div></a>
+        </li><br><br>
+        <li>
+        	<!-- orcid profile link -->
+          <a href="https://orcid.org/"><div onmouseenter="shakeo()" onmouseleave="lshakeo()" id="orcid" class="ai ai-orcid-square infinite animated ai-2x hidden-xs"></div></a>
+        </li><br><br>
+        <li>
+        	<!-- research Gate profile link  -->
+         <a href="https://www.researchgate.net/"><div onmouseenter="shakeg()" onmouseleave="lshakeg()" id="gate" class="ai ai-researchgate animated infinite fa-2x hidden-xs"></div></a>
+        </li><br><br>
+        <!-- document or Resume Section-->
+       <li><div class="banner-top hidden-xs">
+          <a href="xyz.pdf"><div onmouseenter="shakep()" onmouseleave="lshakep()" id="pdfdowns" class="fa fa-file-pdf-o infinite animated fa-2x hidden-xs"></div></a></div>
+        </li>
+      </ul><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div id="labs" ></div>
+  </div>
+</div>
+
+
+
+
+<div id="projectwork" class="container full-width">
+ 
+  <div id="overleft" class="splitleft modulesl left" onclick="hoverleft()">
+
+    <i id="leftsideicon" class="fa-4x animated"></i>
+    <div id="lefthead" class="centered"><br><br><br><br><br><br><br><br class="hidden-xs"><br class="hidden-xs">
+      <div id="headImageleft" class="stanpad"><img id="headimgl" src="taj_edit2.jpg" alt="Avatar man"></div><br><br><br><br><br><br><br>
+      <h2 id="sushead" class="fon stanpad  visible-xs-block head8 heavy">      &nbsp &nbsp   Design &nbsp &nbsp &nbsp Lab</h2>
+      <h2 id="sushead" class="fon stanpad lwhite hidden-xs head8 heavy">  Design Lab</h2>
+
+      <div  class="stanpad"><img id="headimgl2" class="nodisp" src="taj_edit2.jpg" alt="Avatar man"></div>
+
+      <p id="headtextl" class="fon lwhite nodisp stanpad head3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+    </div><br><br><br><br><br><br><br><br><br>
+    <div id="projdatal" class="nodisp">
+      <div class="row">
+        <div class="col-12 c-align">
+          <br><br><br><br><br><br><br>
+          <p  class="fon head8 reed heavy"><br><br><br><br><br><br><br>Our Lab Work</p><br><br><br>
+        </div>
+      </div>
+      <div class="container-fluid full-width hidden-xs">
+        <div class="row">
+          <div class="col-md-2 imgheight"></div>
+          <div class="col-md-4 imgheight">
+            <div class="smallheight txtright vline"><br><br><br><br><h1 class="vline txtright reed fon">Project 1</h1><br><br>
+              <p class="vline lwhite fon head3"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              <br><br></p><a href="sl_pro_1.html"><button type="submit" class="btn btn-primary btn-lg"><p class="fon">View Project</p></button></p></a>
+            </div>
+          </div>
+          <div class="col-md-1 imgheight"></div>
+          <div class="col-md-4 imgheight">
+            <h1 class="vertical-text reed fon">AR-VR CONFIG</h1><img  src="taj_edit2.jpg">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+      <div class="container-fluid full-width visible-xs-block" onclick="inleftxs()">
+        <div class="row">
+          <div class="col-12 c-align">
+            <h1 class="reed head6">Project 1</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 c-align">
+            <h1 class="vertical-text fon reed vertical-small">AR-VR CONFIGW</h1>
+            <img src="taj_edit2.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8 c-align">
+            <br><br>
+            <p class="lwhite fon head2">W Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p><a href="sl_pro_1.html"><button type="submit" class="btn btn-primary btn-lg"><p class="fon">View Project</p></button></a><br><br><br>
+          </div>
+          <br><br><br><br>
+        </div>
+      </div><br>
+      
+    </div>
+  </div>
+  
+  
+
+
+  <div id="overright" class="splitright modulevr right" onclick="hoverright()">
+  	<i id="rightsideicon" class=" rblack fa-4x"></i>
+  	<div id="dataright">
+      <div id="righthead" class="centered"><br><br><br><br><br><br>
+        <div id="headImageright" class="stanpad"><img id="headimgr" src="taj_edit2.jpg" alt="Avatar man"></div><br><br><br><br><br><br><br>
+        <h2 id="vrhead" class="fon rblack stanpad head8  heavy">Virtual Reality Experience Lab </h2>
+        <div class="stanpad">
+          <img id="headimgr2" class="nodisp" src="taj_edit2.jpg" alt="Avatar man"></div>
+          <p id="headtextr" class="fon rblack nodisp head3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="projdatar" class="nodisp">
+        <div class="row">
+          <div class="col-12 c-align">
+            <br><br><br><br><br><br><br><br>
+            <p class="fon reed head8 heavy"><br><br><br><br>Our Lab Work</p><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="container-fluid full-width hidden-xs">
+          <div class="row">
+            <div class="col-md-2 imgheight"></div>
+            <div class="col-md-4 imgheight">
+              <div class="smallheight vline"><br><br><br><h1 class="vline txtright reed fon">Project 1</h1><br><br>
+                <p class="vline rblack fon txtright head3"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                <br><br><a href="vr_pro_1.html"><button type="submit" class="btn btn-primary btn-lg"><p class="fon">View Project</p></button></p></a>
+              </div>
+            </div>
+            <div class="col-md-1 imgheight"></div>
+            <div class="col-md-4 imgheight">
+              <h1 class="vertical-text reed fon">AR-VR CONFIG</h1><img  src="taj_edit2.jpg">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <div class="container-fluid full-width visible-xs-block" onclick="inrightxs()">
+          <div class="row">
+            <div class="col-12 c-align">
+              <h1 class="reed n head6">Project 1</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 c-align">
+              <h1 class="vertical-text fon reed vertical-small">AR-VR CONFIGW</h1>
+              <img src="taj_edit2.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 c-align">
+              <br><br><br>
+              <p class="rblack fon head2">W Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p><a href="vr_pro_1.html"><a href="vr_pro_1.html"><button type="submit" class="btn btn-primary btn-lg"><p class="fon">View Project</p></button></a><br><br><br><br><br><br>
+            </div>
+            <br><br><br><br>
+          </div>
+        </div><br>
+        <hr class="horizontal">
+        <div class="container-fluid full-width hidden-xs">
+          <br><br>
+          <div class="row">
+            <div class="col-md-2 imgheight"></div>
+            <div class="col-md-4 imgheight">
+              <div class="smallheight txtright vline"><br><br><br><h1 class="reed">Project 1</h1><br><p class=" head3 rblack"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              </p><br><a href="vr_pro_2.html">
+              <button type="submit" class="btn btn-primary btn-lg"><p class="fon">View Project</p></button></a>
+              </div>
+            </div>
+            <div class="col-md-1 imgheight"></div>
+            <div class="col-md-4 imgheight"><h1 class="vertical-text reed">AR-VR CONFIG</h1><img src="taj_edit2.jpg"></div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <div class="container-fluid full-width visible-xs-block">
+          <br><br>
+          <div class="row">
+            <div class="col-12 c-align"><br><br><br>
+              <h1 class="reed n head6">Project 1</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 c-align">
+              <h1 class="vertical-text vertical-small reed fon">AR-VR CONFIGW</h1>
+              <img src="taj_edit2.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 c-align">
+              <br><br><br>
+              <p class="rblack fon head2">W Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p><a href="vr_pro_2.html"><button type="submit" class="btn btn-primary btn-lg"><p class="fon">View Project</p></button><br><br><br></a>
+            </div>
+            <br><br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></a>
+</div>
+
+  
+<div id="otherworks" class="container-fluid relative1 clear" >
+  <div id="otherhead" class=" module12">
+    <div  class="c-align reed fon hidden-xs"><br><br><br><br><br><p class="bigheading">My Other Work</p>
+    </div><br><br><br><br>
+    <div class="row1"> 
+      <div class="column2"></div>
+      <div class="column1 hidden-xs">
+        <div class="containerho">
+          <img  src="img/port01.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </div>
+          </div>
+        </div>
+        <div class="containerho">
+          <img  src="img/images.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X
+            </div>
+          </div>
+        </div>
+        <div class="containerho">
+          <img  src="img/download.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="visible-xs-block xspadding extramarg" >
+        <div id="" class="c-align reed fon visible-xs-block"><p class="bigheading">My Other Work</p>
+      </div>
+      <div class="containerho">
+        <img  src="img/port01.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          </div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/images.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X
+          </div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/download.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X
+          </div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/download.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X</div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/images.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X</div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/port01.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X</div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/port01.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X</div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/images.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X</div>
+        </div>
+      </div>
+      <div class="containerho">
+        <img  src="img/download.jpg" class="imageho" style="width:100%">
+        <div class="middleho">
+          <div class="textho">Project X</div>
+        </div>
+      </div>
+    </div>
+    <div class="column1 hidden-xs">
+        <div class="containerho">
+          <img  src="img/download.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X</div>
+          </div>
+        </div>
+        <div class="containerho">
+          <img  src="img/images.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X</div>
+          </div>
+        </div>
+        <div class="containerho">
+          <img  src="img/port01.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X</div>
+          </div>
+        </div>
+      </div>  
+      <div class="column1 hidden-xs">
+        <div class="containerho">
+          <img  src="img/port01.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X</div>
+          </div>
+        </div>
+        <div class="containerho">
+          <img  src="img/images.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X</div>
+          </div>
+        </div>
+        <div class="containerho">
+          <img  src="img/download.jpg" class="imageho" style="width:100%">
+          <div class="middleho">
+            <div class="textho">Project X</div>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+      </div>
+    </div>
+  </div>
+</div>
+<section id="contact" class="section-padding wow fadeIn delay-05s">
+  <div class="container-fluid full-width">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contact-sec text-center">
+          <h2 class="fon">Want To Contact Me?</h2>
+          <h3 class="fon white">Do let me know about your thoughts on our projects, and to be a part of it contact me</h3>
+        </div>
+        <br><br><br><br><br>
+      </div>
+      <div class="col-md-8 col-md-push-2">
+        <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#f0353c"> Your Request has been posted to Google Spreadsheet</h3>
+        <form action="" method="post" role="form" class="contactForm" onsubmit="return postToGoogle();" target="_self">
+        <div class="form-group">
+          <input type="text" name="entry." class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="validation"></div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="entry." id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+          <div class="validation"></div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="entry." id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+          <div class="validation"></div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="entry." rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" id="message" />
+            <div class="validation"></div>
+          </div>
+
+          <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="basefooter">
+	<p class=" head2 ">© 2019 All rights reserved</p>
+</div>
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script src="js/wow.js"></script>
+  
+  <script src="contactform/contactform.js"></script>
+  <script src="js/shakeanim.js"></script>
+  <script src="js/datalink.js"></script>
+  <script>
+    
+    var xs=window.innerWidth;
+    (function setother(){
+      
+      if (xs<365) {
+        //window.alert("inouter350");
+        document.getElementById("otherwork").style.marginTop="110%";
+        document.getElementById("sushead").classList.add("head5");
+        document.getElementById("sushead").classList.remove("head8");
+        document.getElementById("vrhead").classList.add("head5");
+        document.getElementById("vrhead").classList.remove("head8");
+
+      }
+      else if(xs<394){
+         
+                  document.getElementById("sushead").classList.add("head5");
+        document.getElementById("vrhead").classList.remove("head8");
+                document.getElementById("sushead").classList.remove("head8");
+        document.getElementById("vrhead").classList.add("head5");
+        document.getElementById("otherwork").style.marginTop="110%";
+      }
+      else if(xs<704){
+        
+
+       
+      }
+    })();
+      function hoverleft(){
+      	document.getElementById("otherhead").style.marginTop="200em";
+      
+      	document.getElementById("rightsideicon").classList.add("fa");
+      	document.getElementById("rightsideicon").classList.add("fa-angle-double-left");
+      	document.getElementById("rightsideicon").classList.add("shake");
+      	document.getElementById("leftsideicon").classList.remove("fa");
+      	document.getElementById("leftsideicon").classList.remove("fa-angle-double-right");
+      		document.getElementById("overleft").classList.remove("modulesl");
+      			document.getElementById("overright").classList.add("modulevr");
+        document.getElementById("headimgl").classList.add("nodisp");
+        document.getElementById("headimgl2").classList.remove("nodisp");
+        document.getElementById("overleft").style.height="200em";
+        document.getElementById("overright").style.height="200em";
+        document.getElementById("overleft").style.width="90%";
+        document.getElementById("overleft").style.opacity="0.9";
+        document.getElementById("overright").style.width="10%";
+        document.getElementById("overright").style.opacity="1 ";
+        document.getElementById("lefthead").style.top="50em";
+        document.getElementById("righthead").style.top="50%";
+        document.getElementById("righthead").classList.add("nodisp");
+         document.getElementById("lefthead").classList.remove("nodisp");
+        document.getElementById("headimgl2").style.borderRadius="0%";
+        document.getElementById("headimgr").style.borderRadius="50%";
+        document.getElementById("headimgl").style.width="300px";
+        document.getElementById("headimgr").style.width="150px";
+        document.getElementById("headImageright").classList.add("nodisp");
+        document.getElementById("headImageleft").classList.remove("nodisp");
+        document.getElementById("headtextl").classList.remove("nodisp");
+        document.getElementById("headtextr").classList.add("nodisp");
+        document.getElementById("projdatal").classList.remove("nodisp");
+        window.location = 'index.html#lefthead';
+        
+
+        if (xs<365) {
+    
+          //window.alert("190");
+        }
+        else if(xs<394){
+      
+          //window.alert("120");
+        }
+        else{
+          
+        }
+        
+        document.getElementById("projdatar").classList.add("nodisp");
+      }
+      function hoverright(){
+      
+	      	document.getElementById("otherhead").style.marginTop="240em";
+    	
+	      	      	document.getElementById("rightsideicon").classList.remove("fa");
+      	document.getElementById("rightsideicon").classList.remove("fa-angle-double-left");
+      	document.getElementById("leftsideicon").classList.add("shake");
+      	document.getElementById("leftsideicon").classList.add("fa");
+      	document.getElementById("leftsideicon").classList.add("fa-angle-double-right");
+      		document.getElementById("overleft").classList.add("modulesl");
+      			document.getElementById("overright").classList.remove("modulevr");
+
+        document.getElementById("lefthead").classList.add("nodisp");
+         document.getElementById("righthead").classList.remove("nodisp");
+        document.getElementById("headimgr").classList.add("nodisp");
+        document.getElementById("headimgr2").classList.remove("nodisp");
+         document.getElementById("overleft").style.height="240em";
+        document.getElementById("overright").style.height="240em";
+        document.getElementById("overleft").style.width="10%";
+        document.getElementById("overleft").style.opacity="1";
+        document.getElementById("overright").style.width="90%";
+        document.getElementById("overright").style.opacity="0.9";
+        document.getElementById("righthead").style.top="46em";
+        document.getElementById("lefthead").style.top="50%";
+        document.getElementById("headimgl").style.borderRadius="50%";
+        document.getElementById("headimgr2").style.borderRadius="0%";
+        document.getElementById("headimgl").style.width="150px";
+        document.getElementById("headimgr").style.width="300px";
+        document.getElementById("headImageright").classList.remove("nodisp");
+        document.getElementById("headImageleft").classList.add("nodisp");
+        document.getElementById("headtextl").classList.add("nodisp");
+        document.getElementById("headtextr").classList.remove("nodisp");
+        document.getElementById("projdatal").classList.add("nodisp");
+        window.location = 'index.html#righthead';
+
+        if (xs<365) {
+     
+         //window.alert("190");
+        }
+        else if(xs<394){
+  
+          //window.alert("120");
+        }
+        else{
+        
+         // window.alert("120");
+        }
+        
+         document.getElementById("projdatar").classList.remove("nodisp");
+      }
+  </script>
+  <script>
+  var flag=0;
+
+  function showDiv() {
+    if (flag==0){
+   document.getElementById('visible').style.display = "none";
+   document.getElementById('visible-pressed').style.display = "block";
+
+   flag=1;
+  }
+  else {
+    flag=0;
+    document.getElementById('visible').style.display = "block";
+   document.getElementById('visible-pressed').style.display = "none";
+
+  }
+}
+  function showDiv1() {
+    if(flag==0){
+   document.getElementById('visible1h1').style.display = "none";
+   document.getElementById('visible1inp').style.display = "none";
+   document.getElementById('visible-pressed1inp').style.display = "block";
+   document.getElementById('visible-pressed1h1').style.display = "block";
+   flag=1;
+}
+else {
+  document.getElementById('visible1h1').style.display = "block";
+   document.getElementById('visible1inp').style.display = "block";
+   document.getElementById('visible-pressed1inp').style.display = "none";
+   document.getElementById('visible-pressed1h1').style.display = "none";
+   flag=0;
+}
+
+ 
+}
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("mybtn").style.display = "block";
+  } else {
+    document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+	const el = document.querySelector("#intro");
+
+el.addEventListener("mousemove", (e) => {
+	
+  el.style.backgroundPositionX = -e.clientX/20 + "pt";
+  el.style.backgroundPositionY = -e.clientY/20 + "pt";
+
+
+});
+</script>
+<script>
+	const ele = document.querySelector("#otherhead");
+
+ele.addEventListener("mousemove", (e1) => {
+	
+  ele.style.backgroundPositionX = -e1.clientX/20 + "pt";
+  ele.style.backgroundPositionY = -e1.clientY/20 + "pt";
+
+
+});
+</script>
+<script>
+	const elevr = document.querySelector("#overright");
+
+elevr.addEventListener("mousemove", (e2) => {
+	
+  elevr.style.backgroundPositionX = -e2.clientX/5 + "pt";
+  elevr.style.backgroundPositionY = -e2.clientY/5 + "pt";
+
+
+});
+</script>
+<script>
+	const elesl = document.querySelector("#overleft");
+
+elesl.addEventListener("mousemove", (e3) => {
+	
+  elesl.style.backgroundPositionX = -e3.clientX/3 + "pt";
+  elesl.style.backgroundPositionY = -e3.clientY/3 + "pt";
+
+
+});
+</script>
+
+
+  
+</body>
+
+</html>
